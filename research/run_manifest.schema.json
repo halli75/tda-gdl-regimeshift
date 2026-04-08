@@ -1,0 +1,46 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TDA Regime Run Manifest",
+  "type": "object",
+  "required": [
+    "config_path",
+    "evaluation_mode",
+    "evaluation_split",
+    "best_model",
+    "best_model_threshold",
+    "model_table_path",
+    "predictions_path",
+    "event_table_path",
+    "split_summary_path"
+  ],
+  "properties": {
+    "config_path": {
+      "type": "string"
+    },
+    "best_model": {
+      "type": "string"
+    },
+    "evaluation_mode": {
+      "type": "string"
+    },
+    "evaluation_split": {
+      "type": "string"
+    },
+    "best_model_threshold": {
+      "type": "number"
+    },
+    "model_table_path": {
+      "type": "string"
+    },
+    "predictions_path": {
+      "type": "string"
+    },
+    "event_table_path": {
+      "type": "string"
+    },
+    "split_summary_path": {
+      "type": "string"
+    }
+  },
+  "additionalProperties": true
+}

@@ -1,0 +1,49 @@
+{
+  "m8_tau1": {
+    "label": "m=8, tau=1 (production)",
+    "embed_dim": 8,
+    "embed_tau": 1,
+    "pr_auc": 0.1016,
+    "note": "3-seed ensemble from production run; single-seed ~0.0992",
+    "ci_pr_auc": null
+  },
+  "m4_tau1": {
+    "label": "m=4, tau=1",
+    "embed_dim": 4,
+    "embed_tau": 1,
+    "pr_auc": 0.1059,
+    "event_f1": 0.4585,
+    "ci_pr_auc": [
+      0.0824,
+      0.1394
+    ],
+    "threshold": 0.5,
+    "elapsed_sec": 32.8
+  },
+  "m16_tau1": {
+    "label": "m=16, tau=1",
+    "embed_dim": 16,
+    "embed_tau": 1,
+    "pr_auc": 0.1073,
+    "event_f1": 0.4523,
+    "ci_pr_auc": [
+      0.0828,
+      0.1415
+    ],
+    "threshold": 0.55,
+    "elapsed_sec": 16.0
+  },
+  "m8_tau2": {
+    "label": "m=8, tau=2",
+    "embed_dim": 8,
+    "embed_tau": 2,
+    "pr_auc": 0.1322,
+    "event_f1": 0.4798,
+    "ci_pr_auc": [
+      0.1067,
+      0.1757
+    ],
+    "threshold": 0.5,
+    "elapsed_sec": 16.7
+  }
+}

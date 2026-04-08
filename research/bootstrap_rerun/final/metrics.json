@@ -1,0 +1,223 @@
+{
+  "sample_precision": 0.07757805108798486,
+  "sample_recall": 0.422680412371134,
+  "sample_f1": 0.1310951239008793,
+  "positive_rate": 0.44486531986531985,
+  "pr_auc": 0.08000032947973115,
+  "roc_auc": 0.5051333780604194,
+  "event_precision": 0.4666666666666667,
+  "event_recall": 0.4444444444444444,
+  "event_f1": 0.45528455284552843,
+  "true_event_count": 144.0,
+  "pred_event_count": 45.0,
+  "detected_event_rate": 0.5208333333333334,
+  "mean_lead_bars": 4.533333333333333,
+  "false_alarms_per_day": 0.505050505050505,
+  "threshold": 0.00963205078894153,
+  "bootstrap_ci": {
+    "pr_auc": [
+      0.0645185500693053,
+      0.0979460436687169
+    ],
+    "sample_f1": [
+      0.09409445986661702,
+      0.1665198181909466
+    ]
+  },
+  "best_model": "vol_threshold",
+  "evaluation_mode": "final",
+  "evaluation_split": "final_test",
+  "selection_metric_source": "final_test",
+  "selection_metric": "event_f1",
+  "max_false_alarms_per_day": 2.0,
+  "purge_bars": 20,
+  "embargo_bars": 5,
+  "split_summary": {
+    "train": {
+      "rows": 7033,
+      "positive_rows": 540,
+      "event_count": 398,
+      "timestamp_start": "2008-02-05 00:00:00",
+      "timestamp_end": "2018-10-31 00:00:00"
+    },
+    "val": {
+      "rows": 2296,
+      "positive_rows": 209,
+      "event_count": 136,
+      "timestamp_start": "2018-12-14 00:00:00",
+      "timestamp_end": "2022-06-14 00:00:00"
+    },
+    "test": {
+      "rows": 2376,
+      "positive_rows": 194,
+      "event_count": 147,
+      "timestamp_start": "2022-07-28 00:00:00",
+      "timestamp_end": "2026-03-16 00:00:00"
+    }
+  },
+  "short_event_count": 136.0,
+  "short_event_detected_count": 70.0,
+  "short_event_detection_rate": 0.5147058823529411,
+  "short_event_mean_lead_bars": 4.514285714285714,
+  "models": [
+    {
+      "model": "vol_threshold",
+      "validation_f1": 0.1208548268238762,
+      "feature_count": 1,
+      "evaluation_split": "final_test",
+      "sample_precision": 0.07757805108798486,
+      "sample_recall": 0.422680412371134,
+      "sample_f1": 0.1310951239008793,
+      "positive_rate": 0.44486531986531985,
+      "pr_auc": 0.08000032947973115,
+      "roc_auc": 0.5051333780604194,
+      "event_precision": 0.4666666666666667,
+      "event_recall": 0.4444444444444444,
+      "event_f1": 0.45528455284552843,
+      "true_event_count": 144.0,
+      "pred_event_count": 45.0,
+      "detected_event_rate": 0.5208333333333334,
+      "mean_lead_bars": 4.533333333333333,
+      "false_alarms_per_day": 0.505050505050505,
+      "threshold": 0.00963205078894153,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.0645185500693053,
+          0.0979460436687169
+        ],
+        "sample_f1": [
+          0.09409445986661702,
+          0.1665198181909466
+        ]
+      }
+    },
+    {
+      "model": "gcn_fusion",
+      "validation_f1": 0.23114355231143552,
+      "feature_count": 112,
+      "evaluation_split": "final_test",
+      "sample_precision": 0.11145996860282574,
+      "sample_recall": 0.36597938144329895,
+      "sample_f1": 0.17087845968712395,
+      "positive_rate": 0.2680976430976431,
+      "pr_auc": 0.10160831550506669,
+      "roc_auc": 0.5618651194874653,
+      "event_precision": 0.38686131386861317,
+      "event_recall": 0.4027777777777778,
+      "event_f1": 0.3946591346771088,
+      "true_event_count": 144.0,
+      "pred_event_count": 137.0,
+      "detected_event_rate": 0.5277777777777778,
+      "mean_lead_bars": 3.460526315789474,
+      "false_alarms_per_day": 1.7676767676767675,
+      "threshold": 0.5,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.08678570390758422,
+          0.1262576715522615
+        ],
+        "sample_f1": [
+          0.1425175229213234,
+          0.2004779251230702
+        ]
+      }
+    },
+    {
+      "model": "rf_combined",
+      "validation_f1": 0.09701492537313433,
+      "feature_count": 112,
+      "evaluation_split": "final_test",
+      "sample_precision": 0.16363636363636364,
+      "sample_recall": 0.04639175257731959,
+      "sample_f1": 0.07228915662650602,
+      "positive_rate": 0.023148148148148147,
+      "pr_auc": 0.10478454566408228,
+      "roc_auc": 0.5662189233371446,
+      "event_precision": 0.22580645161290322,
+      "event_recall": 0.05555555555555555,
+      "event_f1": 0.08917197452229299,
+      "true_event_count": 144.0,
+      "pred_event_count": 31.0,
+      "detected_event_rate": 0.09722222222222222,
+      "mean_lead_bars": 2.7142857142857144,
+      "false_alarms_per_day": 0.505050505050505,
+      "threshold": 0.15,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.0839870497449366,
+          0.1321030558629637
+        ],
+        "sample_f1": [
+          0.024188709677419356,
+          0.125
+        ]
+      }
+    },
+    {
+      "model": "rf_topology",
+      "validation_f1": 0.01593625498007968,
+      "feature_count": 90,
+      "evaluation_split": "final_test",
+      "sample_precision": 0.09523809523809523,
+      "sample_recall": 0.020618556701030927,
+      "sample_f1": 0.03389830508474576,
+      "positive_rate": 0.017676767676767676,
+      "pr_auc": 0.08239061139592695,
+      "roc_auc": 0.5068567095353738,
+      "event_precision": 0.10256410256410256,
+      "event_recall": 0.027777777777777776,
+      "event_f1": 0.04371584699453552,
+      "true_event_count": 144.0,
+      "pred_event_count": 39.0,
+      "detected_event_rate": 0.1111111111111111,
+      "mean_lead_bars": 2.5,
+      "false_alarms_per_day": 0.7365319865319865,
+      "threshold": 0.2,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.06582439291603036,
+          0.10547892018779853
+        ],
+        "sample_f1": [
+          0.0,
+          0.072
+        ]
+      }
+    },
+    {
+      "model": "gcn_graph",
+      "validation_f1": 0.0,
+      "feature_count": 0,
+      "evaluation_split": "final_test",
+      "sample_precision": 0.0,
+      "sample_recall": 0.0,
+      "sample_f1": 0.0,
+      "positive_rate": 0.0,
+      "pr_auc": 0.11164563163502668,
+      "roc_auc": 0.559969336747711,
+      "event_precision": 0.0,
+      "event_recall": 0.0,
+      "event_f1": 0.0,
+      "true_event_count": 144.0,
+      "pred_event_count": 0.0,
+      "detected_event_rate": 0.0,
+      "mean_lead_bars": NaN,
+      "false_alarms_per_day": 0.0,
+      "threshold": 0.55,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.08071541976309532,
+          0.15787697105000756
+        ],
+        "sample_f1": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "vix_pr_auc": 0.06441131047018049,
+  "vix_event_recall": 1.0,
+  "vix_event_f1": 1.0,
+  "vix_detected_event_rate": 1.0
+}

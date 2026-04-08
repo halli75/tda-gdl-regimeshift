@@ -1,0 +1,114 @@
+data:
+  provider: yfinance
+  symbols:
+    - SPY
+    - QQQ
+    - VXX
+  timestamp_col: timestamp
+  price_col: mid_price
+  regular_hours_only: true
+  returns_mode: log
+  interval: 60m
+  period: 730d
+  auto_adjust: false
+  prepost: false
+  force_refresh: false
+  cache_dir: data/cache
+
+labels:
+  lookahead_bars: 10
+  volatility_window_bars: 10
+  threshold_quantile: 0.9
+  threshold_lookback_bars: 1500
+  min_history_bars: 200
+  event_merge_gap: 5
+  min_event_span: 1
+  positive_transition_only: true
+
+features:
+  window_bars: 40
+  stride_bars: 5
+  embed_dim: 8
+  embed_tau: 1
+  graph_knn_k: 8
+  betti_radii:
+    - 0.0
+    - 0.1
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+    - 0.6
+    - 0.7
+    - 0.8
+    - 1.0
+  persistence_image_bins: 8
+  topology_feature_sets:
+    - summary
+    - betti
+    - image
+  include_symbol_one_hot: true
+  enable_vxx_tailored: true
+  vxx_tailored_short_horizon: 10
+  vxx_tailored_radii:
+    - 0.0
+    - 0.05
+    - 0.1
+    - 0.15
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+  vxx_tailored_topology_feature_sets:
+    - summary
+    - betti
+
+models:
+  enabled:
+    - vol_threshold
+    - rf_topology
+    - rf_combined
+    - gcn_graph
+    - gcn_fusion
+  random_state: 42
+  rf_estimators: 200
+  gdl_hidden_dim: 64
+  gdl_dropout: 0.1
+  gdl_epochs: 25
+  gdl_patience: 6
+  gdl_batch_size: 64
+  gdl_learning_rate: 0.0005
+  gdl_weight_decay: 0.0001
+  gdl_balance_classes: true
+  gdl_use_cuda: true
+  enable_symbol_offset_calibration: true
+  symbol_offset_fit_split: validation
+
+evaluation:
+  train_frac: 0.6
+  val_frac: 0.2
+  test_frac: 0.2
+  purge_bars: 40
+  embargo_bars: 10
+  min_validation_events: 5
+  min_test_events: 5
+  early_warning_bars: 4
+  bars_per_day: 7
+  bootstrap_samples: 50
+  bootstrap_block_size: 128
+  selection_metric: event_f1
+  max_false_alarms_per_day: 0.10
+  promotion_confirmation_runs: 2
+
+outputs:
+  root_dir: outputs_track_b_vxx_features_offset
+  metrics_filename: metrics.json
+  predictions_filename: predictions.csv
+  event_table_filename: event_table.csv
+  model_table_filename: model_comparison.csv
+  per_symbol_table_filename: per_symbol_metrics.csv
+  short_event_table_filename: short_event_metrics.csv
+  manifest_filename: run_manifest.json
+  summary_filename: run_summary.md
+  figure_dir: figures
+  table_dir: tables

@@ -1,0 +1,7 @@
+event_id,start_index,end_index,duration_bars,is_short_event,detected,first_prediction_index,lead_bars,threshold
+0,5,8,4,False,False,-1,,0.021063891185178808
+1,60,60,1,True,False,-1,,0.021063891185178808
+2,65,67,3,False,False,-1,,0.021063891185178808
+3,86,86,1,True,False,-1,,0.021063891185178808
+4,114,115,2,True,False,-1,,0.021063891185178808
+5,123,125,3,False,True,119,4.0,0.021063891185178808

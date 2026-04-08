@@ -1,0 +1,56 @@
+data:
+  provider: local_csv
+  files:
+  - symbol: SPY
+    path: data/example_prices.csv
+  timestamp_col: timestamp
+  price_col: mid_price
+  returns_mode: log
+labels:
+  lookahead_bars: 20
+  volatility_window_bars: 20
+  threshold_quantile: 0.8
+  threshold_lookback_bars: 200
+  min_history_bars: 80
+  event_merge_gap: 2
+  min_event_span: 1
+  positive_transition_only: true
+features:
+  window_bars: 40
+  stride_bars: 10
+  embed_dim: 5
+  embed_tau: 1
+  graph_knn_k: 4
+  persistence_image_bins: 4
+  topology_feature_sets:
+  - summary
+  - betti
+  include_symbol_one_hot: true
+models:
+  enabled:
+  - vol_threshold
+  - rf_topology
+  - rf_combined
+  - gcn_graph
+  - gcn_fusion
+  rf_estimators: 50
+  gdl_hidden_dim: 16
+  gdl_epochs: 2
+  gdl_batch_size: 32
+  gdl_use_cuda: false
+evaluation:
+  train_frac: 0.6
+  val_frac: 0.2
+  test_frac: 0.2
+  purge_bars: 5
+  embargo_bars: 5
+  min_validation_events: 0
+  min_test_events: 0
+  early_warning_bars: 10
+  bars_per_day: 390
+  bootstrap_samples: 0
+  bootstrap_block_size: 64
+outputs:
+  root_dir: test_artifacts/autoresearch_protocol
+  figure_dir: figures
+  table_dir: tables

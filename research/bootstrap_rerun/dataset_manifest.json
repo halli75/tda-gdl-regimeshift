@@ -1,0 +1,99 @@
+{
+  "provider": "yfinance",
+  "returns_mode": "log",
+  "interval": "1d",
+  "period": "7d",
+  "symbols": {
+    "DBC": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 10.5,
+      "price_max": 46.43999862670898
+    },
+    "EEM": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 18.26000022888184,
+      "price_max": 63.310001373291016
+    },
+    "GLD": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 60.16999816894531,
+      "price_max": 495.8999938964844
+    },
+    "HYG": {
+      "rows": 4774,
+      "timestamp_start": "2007-04-11 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 61.63999938964844,
+      "price_max": 106.08999633789062
+    },
+    "IEF": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 79.58999633789062,
+      "price_max": 123.05999755859376
+    },
+    "LQD": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 81.69999694824219,
+      "price_max": 139.14999389648438
+    },
+    "QQQ": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 25.559999465942383,
+      "price_max": 635.77001953125
+    },
+    "SPY": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 68.11000061035156,
+      "price_max": 695.489990234375
+    },
+    "TLT": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 82.3499984741211,
+      "price_max": 171.57000732421875
+    },
+    "UUP": {
+      "rows": 4802,
+      "timestamp_start": "2007-03-01 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 20.93000030517578,
+      "price_max": 30.670000076293945
+    },
+    "XLE": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 11.78499984741211,
+      "price_max": 62.560001373291016
+    },
+    "XLF": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 5.020308971405029,
+      "price_max": 56.400001525878906
+    },
+    "^VIX": {
+      "rows": 4841,
+      "timestamp_start": "2007-01-03 00:00:00",
+      "timestamp_end": "2026-03-31 00:00:00",
+      "price_min": 9.140000343322754,
+      "price_max": 82.69000244140625
+    }
+  }
+}

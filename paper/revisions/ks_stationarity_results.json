@@ -1,0 +1,80 @@
+{
+  "vol_column_used": "backward_volatility",
+  "splits": {
+    "train": {
+      "n_positive_windows": 540,
+      "n_total_windows": 7033,
+      "rv_mean": 0.013275,
+      "rv_std": 0.016697,
+      "rv_median": 0.00782,
+      "rv_values_sample": [
+        0.012637446002161946,
+        0.013737800658700932,
+        0.011916204170068528,
+        0.012816450457177058,
+        0.014671060325798436,
+        0.015744680968667178,
+        0.01704270609081892,
+        0.017536276558005787,
+        0.019183069388155408,
+        0.028461924864823813
+      ]
+    },
+    "val": {
+      "n_positive_windows": 209,
+      "n_total_windows": 2296,
+      "rv_mean": 0.013028,
+      "rv_std": 0.019064,
+      "rv_median": 0.007875,
+      "rv_values_sample": [
+        0.006758508883932674,
+        0.008887928129548112,
+        0.008499978506266263,
+        0.009518410661277227,
+        0.010587115453455153,
+        0.0098698670384775,
+        0.009794208057063823,
+        0.011479128780364353,
+        0.011006879785963597,
+        0.011116554899713582
+      ]
+    },
+    "test": {
+      "n_positive_windows": 194,
+      "n_total_windows": 2376,
+      "rv_mean": 0.012172,
+      "rv_std": 0.013678,
+      "rv_median": 0.008298,
+      "rv_values_sample": [
+        0.009273370879479334,
+        0.011308541506604632,
+        0.006559876866925332,
+        0.010843235014118761,
+        0.009417080554397085,
+        0.008252320283158898,
+        0.005742663361513527,
+        0.005228969245453897,
+        0.008246169252328411,
+        0.00899987268177273
+      ]
+    }
+  },
+  "ks_tests": {
+    "train_vs_val": {
+      "ks_stat": 0.1366,
+      "p_value": 0.0064,
+      "significant_05": true
+    },
+    "train_vs_test": {
+      "ks_stat": 0.1132,
+      "p_value": 0.047,
+      "significant_05": true
+    },
+    "val_vs_test": {
+      "ks_stat": 0.1983,
+      "p_value": 0.0006,
+      "significant_05": true
+    }
+  },
+  "conclusion": "The KS test rejects H\u2080 of distributional equality between train and test label-positive realized volatility (KS=0.113, p=0.047). Mild nonstationarity in the label distribution should be acknowledged as a limitation; walk-forward evaluation mitigates this risk."
+}

@@ -1,0 +1,27 @@
+{
+  "k5": {
+    "pr_auc": 0.1083,
+    "event_f1": 0.2902,
+    "false_alarms_per_day": 1.431,
+    "mean_lead_bars": 2.98,
+    "ci_pr_auc": [
+      0.0908,
+      0.1391
+    ]
+  },
+  "k12": {
+    "pr_auc": 0.1016,
+    "event_f1": 0.3947,
+    "false_alarms_per_day": 1.7677,
+    "mean_lead_bars": 3.46,
+    "ci_pr_auc": [
+      0.0868,
+      0.1263
+    ]
+  },
+  "delta_pr_auc": -0.0067,
+  "pct_change_pr_auc": -6.2,
+  "graph_density_k5": "~19%",
+  "graph_density_k12": "~46%",
+  "interpretation": "PR-AUC decreases by -0.0067 (-6.2%) from k=5 to k=12. The sparser graph (k=5) achieves comparable or better probability ranking, suggesting over-connectivity at k=12 may introduce noise. The GCN may be functioning primarily as a feature aggregator regardless of graph density."
+}

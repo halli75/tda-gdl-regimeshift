@@ -1,0 +1,90 @@
+data:
+  provider: yfinance
+  symbols:
+    - SPY
+    - QQQ
+    - VXX
+  timestamp_col: timestamp
+  price_col: mid_price
+  regular_hours_only: true
+  returns_mode: log
+  interval: 1m
+  period: 7d
+  auto_adjust: false
+  prepost: false
+  force_refresh: false
+  cache_dir: data/cache
+
+labels:
+  lookahead_bars: 30
+  volatility_window_bars: 30
+  threshold_quantile: 0.9
+  threshold_lookback_bars: 1500
+  min_history_bars: 200
+  event_merge_gap: 5
+  min_event_span: 1
+  positive_transition_only: true
+
+features:
+  window_bars: 60
+  stride_bars: 5
+  embed_dim: 8
+  embed_tau: 1
+  graph_knn_k: 8
+  betti_radii:
+    - 0.0
+    - 0.1
+    - 0.2
+    - 0.3
+    - 0.4
+    - 0.5
+    - 0.6
+    - 0.7
+    - 0.8
+    - 1.0
+  persistence_image_bins: 8
+  topology_feature_sets:
+    - summary
+    - betti
+    - image
+  include_symbol_one_hot: true
+
+models:
+  enabled:
+    - vol_threshold
+    - rf_classical
+    - rf_topology
+    - rf_combined
+    - mlp_combined
+    - gcn_graph
+    - gcn_fusion
+  random_state: 42
+  rf_estimators: 200
+  gdl_hidden_dim: 32
+  gdl_dropout: 0.1
+  gdl_epochs: 15
+  gdl_batch_size: 64
+  gdl_learning_rate: 0.001
+  gdl_weight_decay: 0.0001
+  gdl_use_cuda: true
+
+evaluation:
+  train_frac: 0.6
+  val_frac: 0.2
+  test_frac: 0.2
+  early_warning_bars: 15
+  bars_per_day: 390
+  bootstrap_samples: 25
+  bootstrap_block_size: 128
+
+outputs:
+  root_dir: outputs_yfinance
+  metrics_filename: metrics.json
+  predictions_filename: predictions.csv
+  event_table_filename: event_table.csv
+  model_table_filename: model_comparison.csv
+  per_symbol_table_filename: per_symbol_metrics.csv
+  manifest_filename: run_manifest.json
+  summary_filename: run_summary.md
+  figure_dir: figures
+  table_dir: tables

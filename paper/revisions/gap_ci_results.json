@@ -1,0 +1,32 @@
+{
+  "round6": {
+    "val_event_f1": 0.45,
+    "test_event_f1": 0.395,
+    "gap_point_estimate": 0.055,
+    "gap_ci_95": [
+      -0.0003,
+      0.1341
+    ],
+    "bootstrap_mean_gap": 0.0678,
+    "bootstrap_std_gap": 0.0342,
+    "n_bootstrap": 5000,
+    "block_size": 64,
+    "threshold": 0.5,
+    "note": "CI on gap = val_f1 - test_f1; val_f1 is a point estimate; bootstrap resamples test set"
+  },
+  "round5": {
+    "gap_point_estimate": -0.157,
+    "gap_ci_95": null,
+    "note": "Historical run; val/test predictions not retained; point estimate only"
+  },
+  "round3": {
+    "gap_point_estimate": -0.215,
+    "gap_ci_95": null,
+    "note": "Single-split evaluation (historical); val/test predictions not retained; point estimate only"
+  },
+  "gap_trajectory": [
+    -0.215,
+    -0.157,
+    0.055
+  ]
+}

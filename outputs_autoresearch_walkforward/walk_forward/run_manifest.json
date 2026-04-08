@@ -1,0 +1,17 @@
+{
+  "config_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\configs\\autoresearch_walkforward.yaml",
+  "evaluation_mode": "walk_forward",
+  "evaluation_split": "walk_forward",
+  "selection_metric_source": "walk_forward",
+  "selection_metric": "event_f1",
+  "max_false_alarms_per_day": 2.0,
+  "purge_bars": 20,
+  "embargo_bars": 5,
+  "best_model": "vol_threshold",
+  "best_model_threshold": 0.00809094824255309,
+  "n_folds": 5,
+  "model_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_walkforward\\walk_forward\\tables\\model_comparison.csv",
+  "predictions_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_walkforward\\walk_forward\\predictions.csv",
+  "split_summary_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_walkforward\\walk_forward\\split_summary.json",
+  "walkforward_folds_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_walkforward\\walk_forward\\walkforward_fold_summary.json"
+}

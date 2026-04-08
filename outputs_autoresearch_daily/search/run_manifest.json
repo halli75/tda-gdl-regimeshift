@@ -1,0 +1,20 @@
+{
+  "config_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\configs\\autoresearch_daily.yaml",
+  "evaluation_mode": "search",
+  "evaluation_split": "validation",
+  "selection_metric_source": "validation",
+  "selection_metric": "event_f1",
+  "max_false_alarms_per_day": 2.0,
+  "purge_bars": 20,
+  "embargo_bars": 5,
+  "best_model": "gcn_fusion",
+  "best_model_threshold": 0.5,
+  "enable_vxx_tailored": false,
+  "enable_symbol_offset_calibration": false,
+  "model_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_daily\\search\\tables\\model_comparison.csv",
+  "predictions_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_daily\\search\\predictions.csv",
+  "event_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_daily\\search\\event_table.csv",
+  "per_symbol_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_daily\\search\\tables\\per_symbol_metrics.csv",
+  "short_event_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_daily\\search\\tables\\short_event_metrics.csv",
+  "split_summary_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_daily\\search\\split_summary.json"
+}

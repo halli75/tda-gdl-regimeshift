@@ -1,0 +1,55 @@
+{
+  "egarch_gated": {
+    "pr_auc": 0.0844,
+    "event_f1": 0.1538,
+    "event_recall": 0.1181,
+    "false_alarms_per_day": 1.2626,
+    "ci_pr_auc": [
+      0.0722,
+      0.101
+    ],
+    "threshold": 0.09
+  },
+  "ensemble_50_50": {
+    "pr_auc": 0.1184,
+    "event_f1": 0.4825,
+    "event_recall": 0.8333,
+    "false_alarms_per_day": 2.2517,
+    "ci_pr_auc": [
+      0.1035,
+      0.14
+    ],
+    "threshold": 0.21
+  },
+  "egarch": {
+    "pr_auc": 0.1192,
+    "event_f1": 0.1545,
+    "event_recall": 0.1181,
+    "false_alarms_per_day": 1.2416,
+    "ci_pr_auc": [
+      0.1005,
+      0.1439
+    ],
+    "threshold": 0.47
+  },
+  "gcn_fusion": {
+    "pr_auc": 0.1016,
+    "event_f1": 0.3947,
+    "fa_per_day": 1.7677,
+    "ci_pr_auc": [
+      0.0868,
+      0.1263
+    ]
+  },
+  "vol_threshold": {
+    "pr_auc": 0.08,
+    "event_f1": 0.4553,
+    "fa_per_day": 0.5051,
+    "ci_pr_auc": [
+      0.0645,
+      0.0979
+    ]
+  },
+  "best_hybrid": "ensemble_50_50",
+  "gcn_val_source": "predictions_val.csv (actual GCN val predictions, feature-window aligned)"
+}

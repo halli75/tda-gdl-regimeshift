@@ -1,0 +1,14 @@
+{
+  "har_rv": {
+    "pr_auc": 0.0942,
+    "event_f1": 0.0,
+    "event_recall": 0.0,
+    "false_alarms_per_day": 0.0,
+    "ci_pr_auc": [
+      0.0776,
+      0.1147
+    ],
+    "threshold": 0.11
+  },
+  "model_description": "HAR-RV (Corsi 2009): log(RV_t) = \u03b1 + \u03b2_d\u00b7log(RV_{t-1}) + \u03b2_w\u00b7log(RV_{5d}) + \u03b2_m\u00b7log(RV_{22d}); OLS fit on train+val; exceedance probability via \u03c7\u00b2-CDF."
+}

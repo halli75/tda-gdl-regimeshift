@@ -1,0 +1,104 @@
+{
+  "per_symbol": {
+    "DBC": {
+      "n_windows": 183,
+      "n_events": 11,
+      "egarch_pr_auc": 0.0957,
+      "gcn_pr_auc": 0.4549,
+      "gcn_minus_egarch": 0.3592
+    },
+    "EEM": {
+      "n_windows": 183,
+      "n_events": 17,
+      "egarch_pr_auc": 0.1421,
+      "gcn_pr_auc": 0.1061,
+      "gcn_minus_egarch": -0.036
+    },
+    "GLD": {
+      "n_windows": 183,
+      "n_events": 22,
+      "egarch_pr_auc": 0.1184,
+      "gcn_pr_auc": 0.178,
+      "gcn_minus_egarch": 0.0596
+    },
+    "HYG": {
+      "n_windows": 181,
+      "n_events": 11,
+      "egarch_pr_auc": 0.1822,
+      "gcn_pr_auc": 0.1426,
+      "gcn_minus_egarch": -0.0396
+    },
+    "IEF": {
+      "n_windows": 183,
+      "n_events": 15,
+      "egarch_pr_auc": 0.0953,
+      "gcn_pr_auc": 0.1041,
+      "gcn_minus_egarch": 0.0088
+    },
+    "LQD": {
+      "n_windows": 183,
+      "n_events": 15,
+      "egarch_pr_auc": 0.1325,
+      "gcn_pr_auc": 0.1556,
+      "gcn_minus_egarch": 0.0231
+    },
+    "QQQ": {
+      "n_windows": 183,
+      "n_events": 13,
+      "egarch_pr_auc": 0.1745,
+      "gcn_pr_auc": 0.0677,
+      "gcn_minus_egarch": -0.1068
+    },
+    "SPY": {
+      "n_windows": 183,
+      "n_events": 15,
+      "egarch_pr_auc": 0.1968,
+      "gcn_pr_auc": 0.0694,
+      "gcn_minus_egarch": -0.1274
+    },
+    "TLT": {
+      "n_windows": 183,
+      "n_events": 17,
+      "egarch_pr_auc": 0.0973,
+      "gcn_pr_auc": 0.1653,
+      "gcn_minus_egarch": 0.068
+    },
+    "UUP": {
+      "n_windows": 182,
+      "n_events": 13,
+      "egarch_pr_auc": 0.1002,
+      "gcn_pr_auc": 0.265,
+      "gcn_minus_egarch": 0.1648
+    },
+    "XLE": {
+      "n_windows": 183,
+      "n_events": 14,
+      "egarch_pr_auc": 0.1299,
+      "gcn_pr_auc": 0.1822,
+      "gcn_minus_egarch": 0.0523
+    },
+    "XLF": {
+      "n_windows": 183,
+      "n_events": 15,
+      "egarch_pr_auc": 0.166,
+      "gcn_pr_auc": 0.0731,
+      "gcn_minus_egarch": -0.0929
+    },
+    "^VIX": {
+      "n_windows": 183,
+      "n_events": 16,
+      "egarch_pr_auc": 0.0874,
+      "gcn_pr_auc": 0.1166,
+      "gcn_minus_egarch": 0.0292
+    }
+  },
+  "summary": {
+    "n_symbols": 13,
+    "mean_egarch_pr_auc": 0.1322,
+    "mean_gcn_pr_auc": 0.16,
+    "gcn_wins_count": 8,
+    "egarch_wins_count": 5,
+    "best_egarch_symbol": "SPY",
+    "best_gcn_symbol": "DBC"
+  }
+}

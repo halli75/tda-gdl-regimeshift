@@ -1,0 +1,20 @@
+{
+  "config_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\configs\\autoresearch_hybrid.yaml",
+  "evaluation_mode": "search",
+  "evaluation_split": "validation",
+  "selection_metric_source": "validation",
+  "selection_metric": "event_f1",
+  "max_false_alarms_per_day": 0.1,
+  "purge_bars": 40,
+  "embargo_bars": 10,
+  "best_model": "vol_threshold",
+  "best_model_threshold": 0.021063891185178808,
+  "enable_vxx_tailored": false,
+  "enable_symbol_offset_calibration": false,
+  "model_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_baseline\\search\\tables\\model_comparison.csv",
+  "predictions_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_baseline\\search\\predictions.csv",
+  "event_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_baseline\\search\\event_table.csv",
+  "per_symbol_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_baseline\\search\\tables\\per_symbol_metrics.csv",
+  "short_event_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_baseline\\search\\tables\\short_event_metrics.csv",
+  "split_summary_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\outputs_autoresearch_baseline\\search\\split_summary.json"
+}

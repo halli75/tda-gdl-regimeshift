@@ -1,0 +1,14 @@
+{
+  "ms_garch": {
+    "pr_auc": 0.0918,
+    "event_f1": 0.1356,
+    "event_recall": 0.125,
+    "false_alarms_per_day": 1.936,
+    "ci_pr_auc": [
+      0.0748,
+      0.1152
+    ],
+    "threshold": 0.92
+  },
+  "model_description": "Markov-Switching AR(1) with 2 regimes and switching variance (statsmodels MarkovAutoregression, k_regimes=2, order=1, switching_variance=True). Score = filtered P(high-variance state)."
+}

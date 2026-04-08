@@ -1,0 +1,33 @@
+{
+  "gcn_threshold": 0.55,
+  "vol_threshold_value": 0.00963205078894153,
+  "test_brier_score": {
+    "T": 2376,
+    "H_bandwidth": 8,
+    "d_bar": -0.25848827466103985,
+    "lrv": 1.7477829671353737,
+    "dm_stat": -9.530601580645756,
+    "p_two_tailed": 0.0,
+    "p_one_tailed_gcn_better": 7.818720081853836e-22,
+    "loss_gcn_mean": 0.19900330783054263,
+    "loss_vol_mean": 0.4574915824915825,
+    "direction": "gcn_better",
+    "conclusion": "gcn_fusion has significantly lower Brier loss than vol_threshold (binary)"
+  },
+  "test_01_loss": {
+    "T": 2376,
+    "H_bandwidth": 8,
+    "d_bar": -0.2196969696969697,
+    "lrv": 2.4973510742564917,
+    "dm_stat": -6.776531871647113,
+    "p_two_tailed": 1.230948676322896e-11,
+    "p_one_tailed_gcn_better": 6.1547458166747985e-12,
+    "loss_gcn_mean": 0.23779461279461278,
+    "loss_vol_mean": 0.4574915824915825,
+    "gcn_error_rate": 0.23779461279461278,
+    "vol_error_rate": 0.4574915824915825,
+    "direction": "gcn_better",
+    "conclusion": "gcn_fusion has significantly lower 0-1 loss at operating threshold"
+  },
+  "notes": "vol_threshold_score is raw realized volatility (not a probability). Test 1 compares gcn probability scores against vol binary predictions under the Brier scoring rule. Test 2 compares binary accuracy at each model's selected operating threshold."
+}

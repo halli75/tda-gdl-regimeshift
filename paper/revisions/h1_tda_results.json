@@ -1,0 +1,59 @@
+{
+  "parameters": {
+    "symbols": [
+      "SPY",
+      "GLD",
+      "DBC"
+    ],
+    "window_bars": 40,
+    "embed_dim": 6,
+    "embed_tau": 1,
+    "point_cloud_size": 35
+  },
+  "h1_feature_stats": {
+    "h1_sum_pers": {
+      "mean": 0.024848,
+      "std": 0.020104,
+      "nonzero_frac": 1.0
+    },
+    "h1_max_pers": {
+      "mean": 0.004802,
+      "std": 0.003248,
+      "nonzero_frac": 1.0
+    },
+    "h1_loop_density": {
+      "mean": 12.220787,
+      "std": 4.49393,
+      "nonzero_frac": 1.0
+    }
+  },
+  "rf_baseline_pr_auc": 0.5385,
+  "rf_baseline_f1": 0.6024,
+  "rf_baseline_ci": [
+    0.4516,
+    0.6541
+  ],
+  "rf_h1_pr_auc": 0.5484,
+  "rf_h1_f1": 0.5682,
+  "rf_h1_ci": [
+    0.4538,
+    0.6706
+  ],
+  "h1_permutation_importance": {
+    "h1_sum_pers": {
+      "mean": -0.008181,
+      "std": 0.008902
+    },
+    "h1_max_pers": {
+      "mean": -0.00756,
+      "std": 0.006767
+    },
+    "h1_loop_density": {
+      "mean": -0.00704,
+      "std": 0.005641
+    }
+  },
+  "h0_topology_mean_importance": -0.00424,
+  "h0_topology_n_features": 11,
+  "conclusion": "RF-combined baseline (112-d) PR-AUC=0.5385; RF+H1 (115-d) PR-AUC=0.5484 (delta=+0.0099). H1 permutation importances: h1_sum_pers=-0.008181, h1_max_pers=-0.007560, h1_loop_density=-0.007040 vs H0 group mean=-0.004240."
+}

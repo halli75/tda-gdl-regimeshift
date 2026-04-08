@@ -1,0 +1,299 @@
+{
+  "n_folds": 5,
+  "fold_val_event_counts": [
+    22,
+    50,
+    46,
+    40,
+    13
+  ],
+  "folds": [
+    {
+      "fold_index": 0,
+      "train_start": "2008-02-05 00:00:00",
+      "train_end": "2016-04-14 00:00:00",
+      "val_start": "2016-07-14 00:00:00",
+      "val_end": "2017-10-09 00:00:00",
+      "val_event_count": 22,
+      "models": {
+        "vol_threshold": {
+          "event_f1": 0.36734693877551017,
+          "pr_auc": 0.04612089273686823,
+          "false_alarms_per_day": 0.6153846153846154,
+          "event_recall": 0.4090909090909091,
+          "mean_lead_bars": 5.0,
+          "threshold": 0.007347308647225381
+        },
+        "rf_topology": {
+          "event_f1": 0.10810810810810811,
+          "pr_auc": 0.05882521921201307,
+          "false_alarms_per_day": 1.0,
+          "event_recall": 0.09090909090909091,
+          "mean_lead_bars": 2.6,
+          "threshold": 0.2
+        },
+        "rf_combined": {
+          "event_f1": 0.0,
+          "pr_auc": 0.041338260945242275,
+          "false_alarms_per_day": 0.0,
+          "event_recall": 0.0,
+          "mean_lead_bars": NaN,
+          "threshold": 0.25
+        },
+        "gcn_graph": {
+          "event_f1": 0.0,
+          "pr_auc": 0.05182192053502218,
+          "false_alarms_per_day": 0.0,
+          "event_recall": 0.0,
+          "mean_lead_bars": NaN,
+          "threshold": 0.5
+        },
+        "gcn_fusion": {
+          "event_f1": 0.08888888888888888,
+          "pr_auc": 0.06051751976936729,
+          "false_alarms_per_day": 1.6153846153846154,
+          "event_recall": 0.09090909090909091,
+          "mean_lead_bars": 4.0,
+          "threshold": 0.65
+        }
+      }
+    },
+    {
+      "fold_index": 1,
+      "train_start": "2008-02-05 00:00:00",
+      "train_end": "2017-04-11 00:00:00",
+      "val_start": "2017-07-12 00:00:00",
+      "val_end": "2018-10-05 00:00:00",
+      "val_event_count": 50,
+      "models": {
+        "vol_threshold": {
+          "event_f1": 0.5723270440251573,
+          "pr_auc": 0.10546851733383683,
+          "false_alarms_per_day": 0.3076923076923077,
+          "event_recall": 0.52,
+          "mean_lead_bars": 4.851851851851852,
+          "threshold": 0.00647059270995487
+        },
+        "rf_topology": {
+          "event_f1": 0.13114754098360654,
+          "pr_auc": 0.1456295725157612,
+          "false_alarms_per_day": 0.5384615384615384,
+          "event_recall": 0.08,
+          "mean_lead_bars": 1.8571428571428572,
+          "threshold": 0.2
+        },
+        "rf_combined": {
+          "event_f1": 0.0,
+          "pr_auc": 0.10004896379973167,
+          "false_alarms_per_day": 0.0,
+          "event_recall": 0.0,
+          "mean_lead_bars": NaN,
+          "threshold": 0.3
+        },
+        "gcn_graph": {
+          "event_f1": 0.0,
+          "pr_auc": 0.12202804839773726,
+          "false_alarms_per_day": 0.0,
+          "event_recall": 0.0,
+          "mean_lead_bars": NaN,
+          "threshold": 0.5
+        },
+        "gcn_fusion": {
+          "event_f1": 0.8182973316391359,
+          "pr_auc": 0.1377837648666732,
+          "false_alarms_per_day": 0.38461538461538464,
+          "event_recall": 0.92,
+          "mean_lead_bars": 4.770833333333333,
+          "threshold": 0.1
+        }
+      }
+    },
+    {
+      "fold_index": 2,
+      "train_start": "2008-02-05 00:00:00",
+      "train_end": "2018-04-10 00:00:00",
+      "val_start": "2018-07-10 00:00:00",
+      "val_end": "2019-10-04 00:00:00",
+      "val_event_count": 46,
+      "models": {
+        "vol_threshold": {
+          "event_f1": 0.4973821989528795,
+          "pr_auc": 0.0832360931724536,
+          "false_alarms_per_day": 0.23076923076923078,
+          "event_recall": 0.41304347826086957,
+          "mean_lead_bars": 4.7,
+          "threshold": 0.006762409627252452
+        },
+        "rf_topology": {
+          "event_f1": 0.06896551724137931,
+          "pr_auc": 0.09261336798041675,
+          "false_alarms_per_day": 0.7692307692307693,
+          "event_recall": 0.043478260869565216,
+          "mean_lead_bars": 1.0,
+          "threshold": 0.2
+        },
+        "rf_combined": {
+          "event_f1": 0.13114754098360656,
+          "pr_auc": 0.1028754748212709,
+          "false_alarms_per_day": 0.8461538461538461,
+          "event_recall": 0.08695652173913043,
+          "mean_lead_bars": 2.75,
+          "threshold": 0.15
+        },
+        "gcn_graph": {
+          "event_f1": 0.0,
+          "pr_auc": 0.11266722718735414,
+          "false_alarms_per_day": 0.0,
+          "event_recall": 0.0,
+          "mean_lead_bars": NaN,
+          "threshold": 0.55
+        },
+        "gcn_fusion": {
+          "event_f1": 0.183206106870229,
+          "pr_auc": 0.10387501707611588,
+          "false_alarms_per_day": 1.9230769230769231,
+          "event_recall": 0.17391304347826086,
+          "mean_lead_bars": 3.263157894736842,
+          "threshold": 0.6
+        }
+      }
+    },
+    {
+      "fold_index": 3,
+      "train_start": "2008-02-05 00:00:00",
+      "train_end": "2019-04-08 00:00:00",
+      "val_start": "2019-07-09 00:00:00",
+      "val_end": "2020-10-01 00:00:00",
+      "val_event_count": 40,
+      "models": {
+        "vol_threshold": {
+          "event_f1": 0.27906976744186046,
+          "pr_auc": 0.08177284456121597,
+          "false_alarms_per_day": 1.3076923076923077,
+          "event_recall": 0.3,
+          "mean_lead_bars": 4.411764705882353,
+          "threshold": 0.009724757823473332
+        },
+        "rf_topology": {
+          "event_f1": 0.1764705882352941,
+          "pr_auc": 0.15951162784204023,
+          "false_alarms_per_day": 1.6923076923076923,
+          "event_recall": 0.15,
+          "mean_lead_bars": 2.4705882352941178,
+          "threshold": 0.15
+        },
+        "rf_combined": {
+          "event_f1": 0.14285714285714288,
+          "pr_auc": 0.1937854467562415,
+          "false_alarms_per_day": 0.9230769230769231,
+          "event_recall": 0.1,
+          "mean_lead_bars": 1.8461538461538463,
+          "threshold": 0.15
+        },
+        "gcn_graph": {
+          "event_f1": 0.0,
+          "pr_auc": 0.15708221656960397,
+          "false_alarms_per_day": 0.0,
+          "event_recall": 0.0,
+          "mean_lead_bars": NaN,
+          "threshold": 0.55
+        },
+        "gcn_fusion": {
+          "event_f1": 0.6153846153846154,
+          "pr_auc": 0.18276392881048753,
+          "false_alarms_per_day": 1.6923076923076923,
+          "event_recall": 0.8,
+          "mean_lead_bars": 3.1666666666666665,
+          "threshold": 0.4
+        }
+      }
+    },
+    {
+      "fold_index": 4,
+      "train_start": "2008-02-05 00:00:00",
+      "train_end": "2020-04-03 00:00:00",
+      "val_start": "2020-07-06 00:00:00",
+      "val_end": "2021-09-29 00:00:00",
+      "val_event_count": 13,
+      "models": {
+        "vol_threshold": {
+          "event_f1": 0.3037974683544304,
+          "pr_auc": 0.024365096868862873,
+          "false_alarms_per_day": 0.5384615384615384,
+          "event_recall": 0.3076923076923077,
+          "mean_lead_bars": 5.0,
+          "threshold": 0.010149672404859408
+        },
+        "rf_topology": {
+          "event_f1": 0.0,
+          "pr_auc": 0.044393041156865244,
+          "false_alarms_per_day": 0.0,
+          "event_recall": 0.0,
+          "mean_lead_bars": NaN,
+          "threshold": 0.35
+        },
+        "rf_combined": {
+          "event_f1": 0.0,
+          "pr_auc": 0.03009971421117874,
+          "false_alarms_per_day": 0.0,
+          "event_recall": 0.0,
+          "mean_lead_bars": NaN,
+          "threshold": 0.2
+        },
+        "gcn_graph": {
+          "event_f1": 0.0,
+          "pr_auc": 0.034662268768828775,
+          "false_alarms_per_day": 0.0,
+          "event_recall": 0.0,
+          "mean_lead_bars": NaN,
+          "threshold": 0.55
+        },
+        "gcn_fusion": {
+          "event_f1": 0.2608695652173913,
+          "pr_auc": 0.2297538200568078,
+          "false_alarms_per_day": 0.5384615384615384,
+          "event_recall": 0.23076923076923078,
+          "mean_lead_bars": 3.0,
+          "threshold": 0.55
+        }
+      }
+    }
+  ],
+  "summary": {
+    "vol_threshold": {
+      "mean_event_f1": 0.4039846835099675,
+      "std_event_f1": 0.11317754628095318,
+      "mean_pr_auc": 0.0681926889346475,
+      "std_pr_auc": 0.029011149699488998,
+      "mean_false_alarms_per_day": 0.6
+    },
+    "rf_topology": {
+      "mean_event_f1": 0.09693835091367761,
+      "std_event_f1": 0.059665621987751626,
+      "mean_pr_auc": 0.1001945657414193,
+      "std_pr_auc": 0.045750543678858134,
+      "mean_false_alarms_per_day": 0.8
+    },
+    "rf_combined": {
+      "mean_event_f1": 0.054800936768149885,
+      "std_event_f1": 0.06721923447647865,
+      "mean_pr_auc": 0.09362957210673302,
+      "std_pr_auc": 0.058186456501045085,
+      "mean_false_alarms_per_day": 0.3538461538461538
+    },
+    "gcn_graph": {
+      "mean_event_f1": 0.0,
+      "std_event_f1": 0.0,
+      "mean_pr_auc": 0.09565233629170926,
+      "std_pr_auc": 0.04560637800592547,
+      "mean_false_alarms_per_day": 0.0
+    },
+    "gcn_fusion": {
+      "mean_event_f1": 0.3933293016000521,
+      "std_event_f1": 0.27723192188239615,
+      "mean_pr_auc": 0.14293881011589032,
+      "std_pr_auc": 0.059107883654622606,
+      "mean_false_alarms_per_day": 1.2307692307692308
+    }
+  }
+}

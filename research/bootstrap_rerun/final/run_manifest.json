@@ -1,0 +1,20 @@
+{
+  "config_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\research\\bootstrap_rerun\\bootstrap_final_config.yaml",
+  "evaluation_mode": "final",
+  "evaluation_split": "final_test",
+  "selection_metric_source": "final_test",
+  "selection_metric": "event_f1",
+  "max_false_alarms_per_day": 2.0,
+  "purge_bars": 20,
+  "embargo_bars": 5,
+  "best_model": "vol_threshold",
+  "best_model_threshold": 0.00963205078894153,
+  "enable_vxx_tailored": false,
+  "enable_symbol_offset_calibration": false,
+  "model_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\research\\bootstrap_rerun\\final\\tables\\model_comparison.csv",
+  "predictions_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\research\\bootstrap_rerun\\final\\predictions.csv",
+  "event_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\research\\bootstrap_rerun\\final\\event_table.csv",
+  "per_symbol_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\research\\bootstrap_rerun\\final\\tables\\per_symbol_metrics.csv",
+  "short_event_table_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\research\\bootstrap_rerun\\final\\tables\\short_event_metrics.csv",
+  "split_summary_path": "C:\\Users\\arnav\\OneDrive\\Desktop\\tda-gdl-regime\\research\\bootstrap_rerun\\final\\split_summary.json"
+}

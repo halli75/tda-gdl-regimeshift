@@ -1,0 +1,23 @@
+{
+  "train": {
+    "rows": 7033,
+    "positive_rows": 540,
+    "event_count": 398,
+    "timestamp_start": "2008-02-05 00:00:00",
+    "timestamp_end": "2018-10-31 00:00:00"
+  },
+  "val": {
+    "rows": 2296,
+    "positive_rows": 209,
+    "event_count": 136,
+    "timestamp_start": "2018-12-14 00:00:00",
+    "timestamp_end": "2022-06-14 00:00:00"
+  },
+  "test": {
+    "rows": 2376,
+    "positive_rows": 194,
+    "event_count": 147,
+    "timestamp_start": "2022-07-28 00:00:00",
+    "timestamp_end": "2026-03-16 00:00:00"
+  }
+}

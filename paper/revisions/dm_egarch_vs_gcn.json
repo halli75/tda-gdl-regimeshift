@@ -1,0 +1,13 @@
+{
+  "T": 2376,
+  "H_bandwidth": 8,
+  "d_bar": -0.09350724,
+  "lrv": 0.1931282893,
+  "dm_stat": -10.3716,
+  "p_two_tailed": 0.0,
+  "p_one_tailed_egarch_better": 0.0,
+  "p_one_tailed_gcn_better": 1.0,
+  "loss_egarch_mean": 0.105496,
+  "loss_gcn_mean": 0.199003,
+  "conclusion": "DM stat = -10.372 (p = 0.000 two-tailed; p = 0.000 one-tailed EGARCH better). EGARCH(1,1) has significantly lower Brier score than gcn-fusion."
+}

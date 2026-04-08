@@ -1,0 +1,17 @@
+{
+  "temperature_scaling": {
+    "T_star": 0.7965,
+    "val_ece_baseline": 0.172,
+    "val_ece_calibrated": 0.1684,
+    "test_ece_baseline": 0.3195,
+    "test_ece_calibrated": 0.3018,
+    "test_pr_auc_baseline": 0.1016,
+    "test_pr_auc_calibrated": 0.1016,
+    "pr_auc_delta": 0.0,
+    "ece_reduction": 0.0177,
+    "ece_reduction_pct": 5.6
+  },
+  "model": "gcn_fusion",
+  "ece_bins": 15,
+  "note": "Temperature scaling T*=0.7965 selected on val ECE. Applied as sigmoid(logit/T) to test scores. PR-AUC unchanged (monotonic transform, delta=0.000000)."
+}

@@ -1,0 +1,19 @@
+{
+  "walk_forward": {
+    "n_folds": 5,
+    "fold_val_event_counts": [
+      22,
+      50,
+      46,
+      40,
+      13
+    ],
+    "event_count": 171
+  },
+  "test": {
+    "rows": 2361,
+    "event_count": 143,
+    "timestamp_start": "2022-08-04 00:00:00",
+    "timestamp_end": "2026-03-18 00:00:00"
+  }
+}

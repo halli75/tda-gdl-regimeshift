@@ -1,0 +1,183 @@
+{
+  "group_importance": {
+    "topology": {
+      "n_features": 77,
+      "mean_importance": 0.000261,
+      "sum_importance": 0.020086,
+      "top_feature": "top_image_7",
+      "top_importance": 0.003575
+    },
+    "classical": {
+      "n_features": 11,
+      "mean_importance": 0.002521,
+      "sum_importance": 0.027733,
+      "top_feature": "cls_skewness",
+      "top_importance": 0.005009
+    },
+    "xcorr": {
+      "n_features": 11,
+      "mean_importance": 0.002567,
+      "sum_importance": 0.02824,
+      "top_feature": "xcorr_qqq_vix",
+      "top_importance": 0.007887
+    },
+    "sym_onehot": {
+      "n_features": 13,
+      "mean_importance": 8.2e-05,
+      "sum_importance": 0.001065,
+      "top_feature": "sym_QQQ",
+      "top_importance": 0.000983
+    }
+  },
+  "top20_features": [
+    {
+      "rank": 1,
+      "feature": "xcorr_qqq_vix",
+      "importance": 0.007887,
+      "std": 0.003376,
+      "group": "xcorr"
+    },
+    {
+      "rank": 2,
+      "feature": "xcorr_spy_vix",
+      "importance": 0.00672,
+      "std": 0.003031,
+      "group": "xcorr"
+    },
+    {
+      "rank": 3,
+      "feature": "xcorr_spy_eem",
+      "importance": 0.005253,
+      "std": 0.001936,
+      "group": "xcorr"
+    },
+    {
+      "rank": 4,
+      "feature": "cls_skewness",
+      "importance": 0.005009,
+      "std": 0.001557,
+      "group": "classical"
+    },
+    {
+      "rank": 5,
+      "feature": "xcorr_gld_vix",
+      "importance": 0.00408,
+      "std": 0.002414,
+      "group": "xcorr"
+    },
+    {
+      "rank": 6,
+      "feature": "top_image_7",
+      "importance": 0.003575,
+      "std": 0.001455,
+      "group": "topology"
+    },
+    {
+      "rank": 7,
+      "feature": "top_betti_4",
+      "importance": 0.003467,
+      "std": 0.002417,
+      "group": "topology"
+    },
+    {
+      "rank": 8,
+      "feature": "cls_upside_semivariance",
+      "importance": 0.003456,
+      "std": 0.002417,
+      "group": "classical"
+    },
+    {
+      "rank": 9,
+      "feature": "cls_kurtosis",
+      "importance": 0.003286,
+      "std": 0.003599,
+      "group": "classical"
+    },
+    {
+      "rank": 10,
+      "feature": "cls_bipower_variation",
+      "importance": 0.00302,
+      "std": 0.002312,
+      "group": "classical"
+    },
+    {
+      "rank": 11,
+      "feature": "top_summary_total_persistence",
+      "importance": 0.002919,
+      "std": 0.00291,
+      "group": "topology"
+    },
+    {
+      "rank": 12,
+      "feature": "top_betti_3",
+      "importance": 0.002746,
+      "std": 0.000794,
+      "group": "topology"
+    },
+    {
+      "rank": 13,
+      "feature": "top_betti_8",
+      "importance": 0.002715,
+      "std": 0.000996,
+      "group": "topology"
+    },
+    {
+      "rank": 14,
+      "feature": "top_image_3",
+      "importance": 0.002581,
+      "std": 0.001725,
+      "group": "topology"
+    },
+    {
+      "rank": 15,
+      "feature": "top_betti_5",
+      "importance": 0.002305,
+      "std": 0.004492,
+      "group": "topology"
+    },
+    {
+      "rank": 16,
+      "feature": "cls_mean_abs_return",
+      "importance": 0.002287,
+      "std": 0.001993,
+      "group": "classical"
+    },
+    {
+      "rank": 17,
+      "feature": "cls_trend_slope",
+      "importance": 0.00222,
+      "std": 0.001303,
+      "group": "classical"
+    },
+    {
+      "rank": 18,
+      "feature": "cls_cumulative_return",
+      "importance": 0.002026,
+      "std": 0.001995,
+      "group": "classical"
+    },
+    {
+      "rank": 19,
+      "feature": "xcorr_tlt_vix",
+      "importance": 0.001836,
+      "std": 0.000802,
+      "group": "xcorr"
+    },
+    {
+      "rank": 20,
+      "feature": "cls_realized_volatility",
+      "importance": 0.001818,
+      "std": 0.001474,
+      "group": "classical"
+    }
+  ],
+  "feature_counts": {
+    "topology": 77,
+    "classical": 11,
+    "xcorr": 11,
+    "sym_onehot": 13
+  },
+  "n_repeats": 10,
+  "scoring": "average_precision",
+  "split": "test (2022-07-28 \u2013 2026-03-16)"
+}

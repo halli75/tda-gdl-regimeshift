@@ -1,0 +1,123 @@
+data:
+  provider: yfinance
+  symbols:
+  - SPY
+  - QQQ
+  - ^VIX
+  - TLT
+  - GLD
+  - EEM
+  - HYG
+  - LQD
+  - DBC
+  - UUP
+  - IEF
+  - XLF
+  - XLE
+  timestamp_col: timestamp
+  price_col: mid_price
+  # CRITICAL: daily timestamps from yfinance are midnight UTC.
+  # between_time("09:30","16:00") would silently drop ALL rows — must be false.
+  regular_hours_only: false
+  returns_mode: log
+  interval: 1d
+  start: "2007-01-02"   # HYG/UUP/DBC launch 2006-2007; full 13-symbol alignment
+  end: null             # use today's date at download time
+  auto_adjust: false
+  prepost: false
+  force_refresh: false
+  cache_dir: data/cache
+
+labels:
+  lookahead_bars: 5           # 5 trading days = 1 week forward vol window
+  volatility_window_bars: 20  # 20 days = 1 trading month backward vol
+  threshold_quantile: 0.9
+  threshold_lookback_bars: 252  # 1 year rolling quantile for threshold
+  min_history_bars: 252       # 1 year of history required before labeling starts
+  event_merge_gap: 3          # merge events within 3 days of each other
+  min_event_span: 2           # discard events shorter than 2 days
+  positive_transition_only: true
+
+features:
+  window_bars: 60             # 60 trading days ≈ 3 months (one quarter)
+  stride_bars: 5              # 5 days = 1 week stride
+  embed_dim: 8
+  embed_tau: 1
+  graph_knn_k: 8
+  betti_radii:
+  - 0.0
+  - 0.1
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  - 0.6
+  - 0.7
+  - 0.8
+  - 1.0
+  persistence_image_bins: 8
+  topology_feature_sets:
+  - summary
+  - betti
+  - image
+  include_symbol_one_hot: true
+  enable_vxx_tailored: false
+  vxx_tailored_short_horizon: 10
+  vxx_tailored_radii:
+  - 0.0
+  - 0.05
+  - 0.1
+  - 0.15
+  - 0.2
+  - 0.3
+  - 0.4
+  - 0.5
+  vxx_tailored_topology_feature_sets:
+  - summary
+  - betti
+
+models:
+  enabled:
+  - vol_threshold
+  - rf_topology
+  - rf_combined
+  - gcn_graph
+  - gcn_fusion
+  random_state: 42
+  rf_estimators: 200
+  gdl_hidden_dim: 128       # more capacity for larger dataset
+  gdl_dropout: 0.1
+  gdl_epochs: 50            # more data needs more training time
+  gdl_patience: 10
+  gdl_batch_size: 128
+  gdl_learning_rate: 0.005   # best from round 1 (iter_018)
+  gdl_weight_decay: 0.0     # best from round 1 (iter_018)
+  gdl_balance_classes: true
+  gdl_focal_gamma: null   # disabled at baseline; autoresearch will try 1.0 and 2.0
+  gdl_n_ensemble: 3       # train 3 models with different seeds, average scores to reduce stochasticity
+  gdl_use_cuda: true
+  enable_symbol_offset_calibration: false
+  symbol_offset_fit_split: validation
+
+evaluation:
+  train_frac: 0.6
+  val_frac: 0.2
+  test_frac: 0.2
+  purge_bars: 20              # 20 trading days = 1 month anti-leakage gap
+  embargo_bars: 5             # 5 days = 1 week
+  min_validation_events: 10
+  min_test_events: 10
+  early_warning_bars: 5       # 5 days = 1 week early warning window
+  # bars_per_day rationale: with stride=5 and 252 trading days/yr, there are
+  # 252/5 = 50 strided feature vectors per year. Setting bars_per_day=50 makes
+  # the false_alarms_per_day formula correctly count false alarms per trading year.
+  bars_per_day: 50
+  bootstrap_samples: 100
+  bootstrap_block_size: 64    # 64 * 5 days = 320 days ≈ 1.25 years per bootstrap block
+  selection_metric: event_f1
+  max_false_alarms_per_day: 2.0  # search phase: 2 false alarms per trading year. tighten at final eval.
+  max_positive_rate: 0.5
+  promotion_confirmation_runs: 2
+
+outputs:
+  root_dir: outputs_autoresearch_daily

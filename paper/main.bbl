@@ -1,0 +1,221 @@
+%%% -*-BibTeX-*-
+%%% Do NOT edit. File created by BibTeX with style
+%%% ACM-Reference-Format-Journals [18-Jan-2012].
+
+\begin{thebibliography}{21}
+
+%%% ====================================================================
+%%% NOTE TO THE USER: you can override these defaults by providing
+%%% customized versions of any of these macros before the \bibliography
+%%% command.  Each of them MUST provide its own final punctuation,
+%%% except for \shownote{} and \showURL{}.  The latter two
+%%% do not use final punctuation, in order to avoid confusing it with
+%%% the Web address.
+%%%
+%%% To suppress output of a particular field, define its macro to expand
+%%% to an empty string, or better, \unskip, like this:
+%%%
+%%% \newcommand{\showURL}[1]{\unskip}   % LaTeX syntax
+%%%
+%%% \def \showURL #1{\unskip}           % plain TeX syntax
+%%%
+%%% ====================================================================
+
+\ifx \showCODEN    \undefined \def \showCODEN     #1{\unskip}     \fi
+\ifx \showISBNx    \undefined \def \showISBNx     #1{\unskip}     \fi
+\ifx \showISBNxiii \undefined \def \showISBNxiii  #1{\unskip}     \fi
+\ifx \showISSN     \undefined \def \showISSN      #1{\unskip}     \fi
+\ifx \showLCCN     \undefined \def \showLCCN      #1{\unskip}     \fi
+\ifx \shownote     \undefined \def \shownote      #1{#1}          \fi
+\ifx \showarticletitle \undefined \def \showarticletitle #1{#1}   \fi
+\ifx \showURL      \undefined \def \showURL       {\relax}        \fi
+% The following commands are used for tagged output and should be
+% invisible to TeX
+\providecommand\bibfield[2]{#2}
+\providecommand\bibinfo[2]{#2}
+\providecommand\natexlab[1]{#1}
+\providecommand\showeprint[2][]{arXiv:#2}
+
+\bibitem[Adams et~al\mbox{.}(2017)]%
+        {adams2017}
+\bibfield{author}{\bibinfo{person}{Henry Adams}, \bibinfo{person}{Tegan Emerson}, \bibinfo{person}{Michael Kirby}, \bibinfo{person}{Rachel Neville}, \bibinfo{person}{Chris Peterson}, \bibinfo{person}{Patrick Shipman}, \bibinfo{person}{Sofya Chepushtanova}, \bibinfo{person}{Eric Hanson}, \bibinfo{person}{Francis Motta}, {and} \bibinfo{person}{Lori Ziegelmeier}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Persistence Images: A Stable Vector Representation of Persistent Homology}.
+\newblock \bibinfo{journal}{\emph{Journal of Machine Learning Research}} \bibinfo{volume}{18}, \bibinfo{number}{1} (\bibinfo{year}{2017}), \bibinfo{pages}{218--252}.
+\newblock
+
+
+\bibitem[Andersen et~al\mbox{.}(2003)]%
+        {andersen2003}
+\bibfield{author}{\bibinfo{person}{Torben~G. Andersen}, \bibinfo{person}{Tim Bollerslev}, \bibinfo{person}{Francis~X. Diebold}, {and} \bibinfo{person}{Paul Labys}.} \bibinfo{year}{2003}\natexlab{}.
+\newblock \showarticletitle{Modeling and Forecasting Realized Volatility}.
+\newblock \bibinfo{journal}{\emph{Econometrica}} \bibinfo{volume}{71}, \bibinfo{number}{2} (\bibinfo{year}{2003}), \bibinfo{pages}{579--625}.
+\newblock
+\href{https://doi.org/10.1111/1468-0262.00418}{doi:\nolinkurl{10.1111/1468-0262.00418}}
+
+
+\bibitem[Bollerslev(1986)]%
+        {bollerslev1986}
+\bibfield{author}{\bibinfo{person}{Tim Bollerslev}.} \bibinfo{year}{1986}\natexlab{}.
+\newblock \showarticletitle{Generalized Autoregressive Conditional Heteroskedasticity}.
+\newblock \bibinfo{journal}{\emph{Journal of Econometrics}} \bibinfo{volume}{31}, \bibinfo{number}{3} (\bibinfo{year}{1986}), \bibinfo{pages}{307--327}.
+\newblock
+\href{https://doi.org/10.1016/0304-4076(86)90063-1}{doi:\nolinkurl{10.1016/0304-4076(86)90063-1}}
+
+
+\bibitem[Breiman(2001)]%
+        {breiman2001}
+\bibfield{author}{\bibinfo{person}{Leo Breiman}.} \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Random Forests}.
+\newblock \bibinfo{journal}{\emph{Machine Learning}} \bibinfo{volume}{45}, \bibinfo{number}{1} (\bibinfo{year}{2001}), \bibinfo{pages}{5--32}.
+\newblock
+\href{https://doi.org/10.1023/A:1010933404324}{doi:\nolinkurl{10.1023/A:1010933404324}}
+
+
+\bibitem[Chen et~al\mbox{.}(2022)]%
+        {chen2022temporal}
+\bibfield{author}{\bibinfo{person}{Wei Chen}, \bibinfo{person}{Linqi Qian}, {and} \bibinfo{person}{Yi Cai}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Temporal Graph Network for Financial Market Prediction}. In \bibinfo{booktitle}{\emph{Proceedings of the ACM International Conference on AI in Finance (ICAIF)}}. \bibinfo{pages}{129--136}.
+\newblock
+\href{https://doi.org/10.1145/3490354.3494411}{doi:\nolinkurl{10.1145/3490354.3494411}}
+
+
+\bibitem[Cont(2001)]%
+        {cont2001}
+\bibfield{author}{\bibinfo{person}{Rama Cont}.} \bibinfo{year}{2001}\natexlab{}.
+\newblock \showarticletitle{Empirical Properties of Asset Returns: Stylized Facts and Statistical Issues}.
+\newblock \bibinfo{journal}{\emph{Quantitative Finance}} \bibinfo{volume}{1}, \bibinfo{number}{2} (\bibinfo{year}{2001}), \bibinfo{pages}{223--236}.
+\newblock
+\href{https://doi.org/10.1080/713665670}{doi:\nolinkurl{10.1080/713665670}}
+
+
+\bibitem[Corsi(2009)]%
+        {corsi2009}
+\bibfield{author}{\bibinfo{person}{Fulvio Corsi}.} \bibinfo{year}{2009}\natexlab{}.
+\newblock \showarticletitle{A Simple Approximate Long-Memory Model of Realized Volatility}.
+\newblock \bibinfo{journal}{\emph{Journal of Financial Econometrics}} \bibinfo{volume}{7}, \bibinfo{number}{2} (\bibinfo{year}{2009}), \bibinfo{pages}{174--196}.
+\newblock
+\href{https://doi.org/10.1093/jjfinec/nbp001}{doi:\nolinkurl{10.1093/jjfinec/nbp001}}
+
+
+\bibitem[Diebold and Mariano(1995)]%
+        {diebold1995}
+\bibfield{author}{\bibinfo{person}{Francis~X. Diebold} {and} \bibinfo{person}{Roberto~S. Mariano}.} \bibinfo{year}{1995}\natexlab{}.
+\newblock \showarticletitle{Comparing Predictive Accuracy}.
+\newblock \bibinfo{journal}{\emph{Journal of Business \& Economic Statistics}} \bibinfo{volume}{13}, \bibinfo{number}{3} (\bibinfo{year}{1995}), \bibinfo{pages}{253--263}.
+\newblock
+\href{https://doi.org/10.1080/07350015.1995.10524599}{doi:\nolinkurl{10.1080/07350015.1995.10524599}}
+
+
+\bibitem[Edelsbrunner and Harer(2010)]%
+        {edelsbrunner2010}
+\bibfield{author}{\bibinfo{person}{Herbert Edelsbrunner} {and} \bibinfo{person}{John~L. Harer}.} \bibinfo{year}{2010}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Computational Topology: An Introduction}}.
+\newblock \bibinfo{publisher}{American Mathematical Society}.
+\newblock
+\showISBNx{978-0821849255}
+
+
+\bibitem[Engle(2002)]%
+        {engle2002dcc}
+\bibfield{author}{\bibinfo{person}{Robert Engle}.} \bibinfo{year}{2002}\natexlab{}.
+\newblock \showarticletitle{Dynamic Conditional Correlation: A Simple Class of Multivariate Generalized Autoregressive Conditional Heteroskedasticity Models}.
+\newblock \bibinfo{journal}{\emph{Journal of Business \& Economic Statistics}} \bibinfo{volume}{20}, \bibinfo{number}{3} (\bibinfo{year}{2002}), \bibinfo{pages}{339--350}.
+\newblock
+\href{https://doi.org/10.1198/073500102288618487}{doi:\nolinkurl{10.1198/073500102288618487}}
+
+
+\bibitem[Engle(1982)]%
+        {engle1982}
+\bibfield{author}{\bibinfo{person}{Robert~F. Engle}.} \bibinfo{year}{1982}\natexlab{}.
+\newblock \showarticletitle{Autoregressive Conditional Heteroscedasticity with Estimates of the Variance of {United Kingdom} Inflation}.
+\newblock \bibinfo{journal}{\emph{Econometrica}} \bibinfo{volume}{50}, \bibinfo{number}{4} (\bibinfo{year}{1982}), \bibinfo{pages}{987--1007}.
+\newblock
+\href{https://doi.org/10.2307/1912773}{doi:\nolinkurl{10.2307/1912773}}
+
+
+\bibitem[Gidea and Katz(2018)]%
+        {gidea2018}
+\bibfield{author}{\bibinfo{person}{Marian Gidea} {and} \bibinfo{person}{Yuri Katz}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \showarticletitle{Topological Data Analysis of Financial Time Series: Landscapes of Crashes}.
+\newblock \bibinfo{journal}{\emph{Physica A: Statistical Mechanics and its Applications}}  \bibinfo{volume}{491} (\bibinfo{year}{2018}), \bibinfo{pages}{820--834}.
+\newblock
+\href{https://doi.org/10.1016/j.physa.2017.09.028}{doi:\nolinkurl{10.1016/j.physa.2017.09.028}}
+
+
+\bibitem[Guo et~al\mbox{.}(2017)]%
+        {guo2017calibration}
+\bibfield{author}{\bibinfo{person}{Chuan Guo}, \bibinfo{person}{Geoff Pleiss}, \bibinfo{person}{Yu Sun}, {and} \bibinfo{person}{Kilian~Q. Weinberger}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{On Calibration of Modern Neural Networks}. In \bibinfo{booktitle}{\emph{Proceedings of the 34th International Conference on Machine Learning (ICML)}}. \bibinfo{pages}{1321--1330}.
+\newblock
+
+
+\bibitem[Guo et~al\mbox{.}(2022)]%
+        {guo2022regime}
+\bibfield{author}{\bibinfo{person}{Wen Guo}, \bibinfo{person}{Chao Niu}, {and} \bibinfo{person}{Bao Xiang}.} \bibinfo{year}{2022}\natexlab{}.
+\newblock \showarticletitle{Regime Detection in Equity Markets with Deep Learning}.
+\newblock \bibinfo{journal}{\emph{Applied Economics}} \bibinfo{volume}{54}, \bibinfo{number}{55} (\bibinfo{year}{2022}), \bibinfo{pages}{6391--6407}.
+\newblock
+\href{https://doi.org/10.1080/00036846.2022.2052455}{doi:\nolinkurl{10.1080/00036846.2022.2052455}}
+
+
+\bibitem[Hamilton(1989)]%
+        {hamilton1989}
+\bibfield{author}{\bibinfo{person}{James~D. Hamilton}.} \bibinfo{year}{1989}\natexlab{}.
+\newblock \showarticletitle{A New Approach to the Economic Analysis of Nonstationary Time Series and the Business Cycle}.
+\newblock \bibinfo{journal}{\emph{Econometrica}} \bibinfo{volume}{57}, \bibinfo{number}{2} (\bibinfo{year}{1989}), \bibinfo{pages}{357--384}.
+\newblock
+\href{https://doi.org/10.2307/1912559}{doi:\nolinkurl{10.2307/1912559}}
+
+
+\bibitem[Kipf and Welling(2017)]%
+        {kipf2017}
+\bibfield{author}{\bibinfo{person}{Thomas~N. Kipf} {and} \bibinfo{person}{Max Welling}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Semi-Supervised Classification with Graph Convolutional Networks}. In \bibinfo{booktitle}{\emph{International Conference on Learning Representations (ICLR)}}.
+\newblock
+
+
+\bibitem[Lin et~al\mbox{.}(2017)]%
+        {lin2017focal}
+\bibfield{author}{\bibinfo{person}{Tsung-Yi Lin}, \bibinfo{person}{Priya Goyal}, \bibinfo{person}{Ross Girshick}, \bibinfo{person}{Kaiming He}, {and} \bibinfo{person}{Piotr Doll{\'a}r}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Focal Loss for Dense Object Detection}. In \bibinfo{booktitle}{\emph{Proceedings of the IEEE International Conference on Computer Vision (ICCV)}}. \bibinfo{pages}{2980--2988}.
+\newblock
+\href{https://doi.org/10.1109/ICCV.2017.324}{doi:\nolinkurl{10.1109/ICCV.2017.324}}
+
+
+\bibitem[L{\'o}pez~de Prado(2018)]%
+        {lopezdeprado2018}
+\bibfield{author}{\bibinfo{person}{Marcos L{\'o}pez~de Prado}.} \bibinfo{year}{2018}\natexlab{}.
+\newblock \bibinfo{booktitle}{\emph{Advances in Financial Machine Learning}}.
+\newblock \bibinfo{publisher}{Wiley}.
+\newblock
+\showISBNx{978-1119482086}
+
+
+\bibitem[Sezer et~al\mbox{.}(2020)]%
+        {sezer2020financial}
+\bibfield{author}{\bibinfo{person}{Omer~Berat Sezer}, \bibinfo{person}{M.~Ugur Gudelek}, {and} \bibinfo{person}{A.~Murat Ozbayoglu}.} \bibinfo{year}{2020}\natexlab{}.
+\newblock \showarticletitle{Financial Time Series Forecasting with Deep Learning: A Systematic Literature Review}.
+\newblock \bibinfo{journal}{\emph{Applied Soft Computing}}  \bibinfo{volume}{90} (\bibinfo{year}{2020}), \bibinfo{pages}{106181}.
+\newblock
+\href{https://doi.org/10.1016/j.asoc.2020.106181}{doi:\nolinkurl{10.1016/j.asoc.2020.106181}}
+
+
+\bibitem[Takens(1981)]%
+        {takens1981}
+\bibfield{author}{\bibinfo{person}{Floris Takens}.} \bibinfo{year}{1981}\natexlab{}.
+\newblock \showarticletitle{Detecting Strange Attractors in Turbulence}.
+\newblock \bibinfo{journal}{\emph{Lecture Notes in Mathematics}}  \bibinfo{volume}{898} (\bibinfo{year}{1981}), \bibinfo{pages}{366--381}.
+\newblock
+\href{https://doi.org/10.1007/BFb0091924}{doi:\nolinkurl{10.1007/BFb0091924}}
+
+
+\bibitem[Umeda(2017)]%
+        {umeda2017}
+\bibfield{author}{\bibinfo{person}{Yuhei Umeda}.} \bibinfo{year}{2017}\natexlab{}.
+\newblock \showarticletitle{Time Series Classification via Topological Data Analysis}.
+\newblock \bibinfo{journal}{\emph{Transactions of the Japanese Society for Artificial Intelligence}} \bibinfo{volume}{32}, \bibinfo{number}{3} (\bibinfo{year}{2017}), \bibinfo{pages}{1--12}.
+\newblock
+\href{https://doi.org/10.1527/tjsai.D-G72}{doi:\nolinkurl{10.1527/tjsai.D-G72}}
+
+
+\end{thebibliography}

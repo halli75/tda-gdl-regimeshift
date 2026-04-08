@@ -1,0 +1,223 @@
+{
+  "sample_precision": 0.08571428571428572,
+  "sample_recall": 0.21428571428571427,
+  "sample_f1": 0.12244897959183673,
+  "positive_rate": 0.20114942528735633,
+  "pr_auc": 0.07272404466081261,
+  "roc_auc": 0.4133928571428571,
+  "event_precision": 0.5,
+  "event_recall": 0.16666666666666666,
+  "event_f1": 0.25,
+  "true_event_count": 6.0,
+  "pred_event_count": 2.0,
+  "detected_event_rate": 0.16666666666666666,
+  "mean_lead_bars": 4.0,
+  "false_alarms_per_day": 0.040229885057471264,
+  "threshold": 0.021063891185178808,
+  "bootstrap_ci": {
+    "pr_auc": [
+      0.04419704755918573,
+      0.10373584563865228
+    ],
+    "sample_f1": [
+      0.0,
+      0.1946465163934426
+    ]
+  },
+  "best_model": "vol_threshold",
+  "evaluation_mode": "search",
+  "evaluation_split": "validation",
+  "selection_metric_source": "validation",
+  "selection_metric": "event_f1",
+  "max_false_alarms_per_day": 0.1,
+  "purge_bars": 40,
+  "embargo_bars": 10,
+  "split_summary": {
+    "train": {
+      "rows": 585,
+      "positive_rows": 72,
+      "event_count": 36,
+      "timestamp_start": "2023-08-08 15:30:00+00:00",
+      "timestamp_end": "2025-01-31 14:30:00+00:00"
+    },
+    "val": {
+      "rows": 174,
+      "positive_rows": 14,
+      "event_count": 6,
+      "timestamp_start": "2025-03-11 15:30:00+00:00",
+      "timestamp_end": "2025-07-28 15:30:00+00:00"
+    },
+    "test": {
+      "rows": 207,
+      "positive_rows": 16,
+      "event_count": 8,
+      "timestamp_start": "2025-08-22 13:30:00+00:00",
+      "timestamp_end": "2026-03-18 15:30:00+00:00"
+    }
+  },
+  "short_event_count": 3.0,
+  "short_event_detected_count": 0.0,
+  "short_event_detection_rate": 0.0,
+  "short_event_mean_lead_bars": NaN,
+  "models": [
+    {
+      "model": "vol_threshold",
+      "validation_f1": 0.12244897959183673,
+      "feature_count": 1,
+      "evaluation_split": "validation",
+      "sample_precision": 0.08571428571428572,
+      "sample_recall": 0.21428571428571427,
+      "sample_f1": 0.12244897959183673,
+      "positive_rate": 0.20114942528735633,
+      "pr_auc": 0.07272404466081261,
+      "roc_auc": 0.4133928571428571,
+      "event_precision": 0.5,
+      "event_recall": 0.16666666666666666,
+      "event_f1": 0.25,
+      "true_event_count": 6.0,
+      "pred_event_count": 2.0,
+      "detected_event_rate": 0.16666666666666666,
+      "mean_lead_bars": 4.0,
+      "false_alarms_per_day": 0.040229885057471264,
+      "threshold": 0.021063891185178808,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.04419704755918573,
+          0.10373584563865228
+        ],
+        "sample_f1": [
+          0.0,
+          0.1946465163934426
+        ]
+      }
+    },
+    {
+      "model": "gcn_fusion",
+      "validation_f1": 0.10526315789473684,
+      "feature_count": 91,
+      "evaluation_split": "validation",
+      "sample_precision": 0.2,
+      "sample_recall": 0.07142857142857142,
+      "sample_f1": 0.10526315789473684,
+      "positive_rate": 0.028735632183908046,
+      "pr_auc": 0.2939525086343306,
+      "roc_auc": 0.7700892857142858,
+      "event_precision": 0.3333333333333333,
+      "event_recall": 0.16666666666666666,
+      "event_f1": 0.2222222222222222,
+      "true_event_count": 6.0,
+      "pred_event_count": 3.0,
+      "detected_event_rate": 0.3333333333333333,
+      "mean_lead_bars": 1.5,
+      "false_alarms_per_day": 0.08045977011494253,
+      "threshold": 0.6,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.20615711237289755,
+          0.3726222724445152
+        ],
+        "sample_f1": [
+          0.0,
+          0.18181818181818182
+        ]
+      }
+    },
+    {
+      "model": "rf_topology",
+      "validation_f1": 0.10526315789473684,
+      "feature_count": 80,
+      "evaluation_split": "validation",
+      "sample_precision": 0.2,
+      "sample_recall": 0.07142857142857142,
+      "sample_f1": 0.10526315789473684,
+      "positive_rate": 0.028735632183908046,
+      "pr_auc": 0.2144922769096524,
+      "roc_auc": 0.7176339285714286,
+      "event_precision": 0.3333333333333333,
+      "event_recall": 0.16666666666666666,
+      "event_f1": 0.2222222222222222,
+      "true_event_count": 6.0,
+      "pred_event_count": 3.0,
+      "detected_event_rate": 0.3333333333333333,
+      "mean_lead_bars": 1.5,
+      "false_alarms_per_day": 0.08045977011494253,
+      "threshold": 0.3,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.13462358706442198,
+          0.36510283396056437
+        ],
+        "sample_f1": [
+          0.0,
+          0.25
+        ]
+      }
+    },
+    {
+      "model": "gcn_graph",
+      "validation_f1": 0.0,
+      "feature_count": 0,
+      "evaluation_split": "validation",
+      "sample_precision": 0.0,
+      "sample_recall": 0.0,
+      "sample_f1": 0.0,
+      "positive_rate": 0.0,
+      "pr_auc": 0.1424451827747425,
+      "roc_auc": 0.6357142857142858,
+      "event_precision": 0.0,
+      "event_recall": 0.0,
+      "event_f1": 0.0,
+      "true_event_count": 6.0,
+      "pred_event_count": 0.0,
+      "detected_event_rate": 0.0,
+      "mean_lead_bars": NaN,
+      "false_alarms_per_day": 0.0,
+      "threshold": 0.55,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.10104469516478319,
+          0.21985018406263307
+        ],
+        "sample_f1": [
+          0.0,
+          0.0
+        ]
+      }
+    },
+    {
+      "model": "rf_combined",
+      "validation_f1": 0.0,
+      "feature_count": 91,
+      "evaluation_split": "validation",
+      "sample_precision": 0.0,
+      "sample_recall": 0.0,
+      "sample_f1": 0.0,
+      "positive_rate": 0.0,
+      "pr_auc": 0.10175061653818565,
+      "roc_auc": 0.5924107142857142,
+      "event_precision": 0.0,
+      "event_recall": 0.0,
+      "event_f1": 0.0,
+      "true_event_count": 6.0,
+      "pred_event_count": 0.0,
+      "detected_event_rate": 0.0,
+      "mean_lead_bars": NaN,
+      "false_alarms_per_day": 0.0,
+      "threshold": 0.35,
+      "bootstrap_ci": {
+        "pr_auc": [
+          0.06750016372805559,
+          0.14890034552934542
+        ],
+        "sample_f1": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  ],
+  "vxx_pr_auc": 0.07564217891054473,
+  "vxx_event_recall": 1.0,
+  "vxx_event_f1": 1.0,
+  "vxx_detected_event_rate": 1.0
+}

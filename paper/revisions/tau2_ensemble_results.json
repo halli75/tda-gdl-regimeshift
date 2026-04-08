@@ -1,0 +1,37 @@
+{
+  "tau2_ensemble": {
+    "embed_dim": 8,
+    "embed_tau": 2,
+    "n_ensemble": 3,
+    "pr_auc": 0.1003,
+    "event_f1": 0.4442,
+    "event_recall": 0.4653,
+    "false_alarms_per_day": 1.452,
+    "ci_pr_auc": [
+      0.0857,
+      0.1261
+    ],
+    "threshold": 0.5,
+    "elapsed_sec": 186.3
+  },
+  "tau1_production_reference": {
+    "embed_dim": 8,
+    "embed_tau": 1,
+    "n_ensemble": 3,
+    "pr_auc": 0.1016,
+    "note": "From research/bootstrap_rerun/final/metrics.json"
+  },
+  "tau2_single_seed_reference": {
+    "embed_dim": 8,
+    "embed_tau": 2,
+    "n_ensemble": 1,
+    "pr_auc": 0.1322,
+    "ci_pr_auc": [
+      0.1067,
+      0.1757
+    ],
+    "note": "From paper/revisions/m7_embedding_sensitivity.json"
+  },
+  "delta_vs_single_seed": -0.0319,
+  "delta_vs_production": -0.0013
+}

@@ -1,0 +1,49 @@
+{
+  "seed_42": {
+    "seed": 42,
+    "pr_auc": 0.0997,
+    "event_f1": 0.4247,
+    "ci_pr_auc": [
+      0.0848,
+      0.1237
+    ],
+    "threshold": 0.15,
+    "elapsed_sec": 63.1
+  },
+  "seed_43": {
+    "seed": 43,
+    "pr_auc": 0.0969,
+    "event_f1": 0.4884,
+    "ci_pr_auc": [
+      0.083,
+      0.1186
+    ],
+    "threshold": 0.5,
+    "elapsed_sec": 42.3
+  },
+  "seed_44": {
+    "seed": 44,
+    "pr_auc": 0.1011,
+    "event_f1": 0.499,
+    "ci_pr_auc": [
+      0.0853,
+      0.1239
+    ],
+    "threshold": 0.55,
+    "elapsed_sec": 54.7
+  },
+  "summary": {
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "mean_pr_auc": 0.0992,
+    "std_pr_auc": 0.0017,
+    "min_pr_auc": 0.0969,
+    "max_pr_auc": 0.1011,
+    "range_pr_auc": 0.0042,
+    "ensemble_3seed_pr_auc": 0.1016,
+    "note": "Per-seed PR-AUCs are from single-member (n_ensemble=1) runs using the same train/val/test split as the production run. Threshold is val-selected independently for each seed. PR-AUC is threshold-independent (full precision-recall curve)."
+  }
+}
